@@ -93,13 +93,19 @@
 <li class="toctree-l2"><a class="reference internal" href="overview.html">系统架构</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html">系统术语表</a></li>
 <li class="toctree-l2"><a class="reference internal" href="explanation.html">文档架构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="version.html">版本发布信息</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download.html">下载</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="index.html#indices-and-tables">Indices and tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Welcome to Data-Based Network Security System(DBNS)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../feasibility/index.html">可行性分析文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">需求设计文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design/index.html">系统设计文档</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">系统架构文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/index.html">系统模块分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">部署与安装文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../test/index.html">测试文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../review/index.html">开发总结</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/index.html">其他材料</a></li>
 </ul>
 
             
@@ -148,6 +154,12 @@
             
   <div class="section" id="id1">
 <h1>背景<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>随着当前互联网通信的飞速发展，主干网服务器的运维工作日益艰巨。主干网服务器是整个互联网的中枢节点，来自四面八方的信息通过主干网节点相互交互与转发，一旦主干网服务器瘫痪，那么一个区域的网络情况都会受到损害。因而，如何安全有效地对主干网服务器的网络服务进行监控与维护，直接关系到互联网环境的健康发展。</p>
+<p>然而在当前的形势下，我们却发现原有的运维程序不再能完全承担这一至关重要的任务。这是因为，网络信息在以下方面发生了变化：</p>
+<p>第一点是信息总量飞速扩增，当前华东教育主干网服务器的流量已经超过10G每秒，大量的数据在短时间经过服务器处理并且被转发。普通的网络日志分析程序无法适应这样的流量要求，因而也就无法完成有效地监控与运维工作。所以，智能运维系统最重要的要求就是在大流量下应对自如，处理流畅。</p>
+<p>第二点是信息流量不够稳定，在峰值时与低谷时的流量差距可以达到2倍以上，极点时甚至超过5倍。这对于运维系统的扩展性和伸缩性提出了崭新的要求。如果以峰值作为标准配置系统，则空闲时系统资源大量闲置与浪费；如果以低谷时作为标准配置系统，则高峰时就势必应对失措。因而，智能运维系统的扩展性已经受到了相关领域技术人员的重视。</p>
+<p>第三点是信息性质日益复杂，不同于前互联网时代的简单报文，当前的网络信息从横向上可以分为数据报文与监控日志两大部分，从纵向上又可以分为通信层、应用层、数据层报文信息。随着时代的发展，新协议的制定如雨后春笋，可供分析的资源也更加丰富。这对于智能运维系统提出了更高的要求；一方面应该尽可能多地应用各类信息，更科学全面地监控管理；另一方面也应该警惕攻击者通过新协议浑水摸鱼，伤害系统安全。</p>
+<p>因而，基于当前互联网信息总量增长、波动显著、性质复杂的三重背景，我们迫切需要结合当前最新的大数据处理技术，逐步优化处理过程，扩展处理性能，精益处理结果，建立更加符合当前时代趋势的智能运维系统。</p>
 </div>
 
 
